@@ -3,4 +3,4 @@ scikit-learn
 pandas
 numpy
 tensorflow-cpu
-keras==2.14.0
+keras==3.10.0
