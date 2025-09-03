@@ -7,8 +7,8 @@ from tensorflow.keras.models import load_model
 word_index = imdb.get_word_index()
 reverse_word_index ={value:key for key,value in word_index.items()}
 #load the pre-trained model with relu activation
-#model = load_model('simple_rnn_imdb.keras')
-model = load_model(r'C:\Users\singh\OneDrive\Documents\ann project\ann project\simple_rnn\simple_rnn_imdb.keras')
+model = load_model('simple_rnn_imdb.keras')
+#model = load_model(r'C:\Users\singh\OneDrive\Documents\ann project\ann project\simple_rnn\simple_rnn_imdb.keras')
 
 # Step 2: Helper Functions
 # Function to decode reviews
@@ -48,4 +48,5 @@ if st.button('Classify'):
     st.write(f'The prediction is {prediction[0][0]}')
 else:
     st.write('No review was entered')
+
 
