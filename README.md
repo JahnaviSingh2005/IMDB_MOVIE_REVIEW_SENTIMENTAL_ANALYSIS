@@ -1,21 +1,27 @@
-# IMDB_MOVIE_REVIEW_SENTIMENTAL_ANALYSIS
 
 # 🎬 IMDB Movie Review Sentiment Analysis using RNN
 
 This project performs **sentiment analysis on IMDB movie reviews** using a **Recurrent Neural Network (RNN)** built with **TensorFlow/Keras**.
-The model classifies movie reviews as **Positive** or **Negative** based on the textual content.
+The system classifies movie reviews as **Positive** or **Negative** and provides an **interactive Streamlit web application** for real-time predictions.
 
 ---
 
 ## 🚀 Project Overview
 
-Sentiment analysis is a key Natural Language Processing (NLP) task used to understand user opinions.
+Sentiment analysis is a key Natural Language Processing (NLP) task used to understand public opinion.
 In this project:
 
 * IMDB movie reviews are preprocessed and tokenized
-* Text data is converted into numerical representations using **embeddings**
-* A **Simple RNN** model is trained to classify sentiment
-* The trained model is saved and reused for predictions
+* Text data is converted into numerical form using embeddings
+* A **Simple RNN** model is trained for sentiment classification
+* The trained model is deployed using **Streamlit**
+
+---
+
+## 🌐 Live Application
+
+🔗 **Streamlit App:**
+[https://imdbmoviereviewsentimentalanalysis-6f7pjcpxrxa5gi96cb2su2.streamlit.app/](https://imdbmoviereviewsentimentalanalysis-6f7pjcpxrxa5gi96cb2su2.streamlit.app/)
 
 ---
 
@@ -23,20 +29,19 @@ In this project:
 
 * Binary sentiment classification (Positive / Negative)
 * Text preprocessing and tokenization
-* Word embeddings for semantic understanding
+* Word embedding layer
 * RNN-based deep learning model
-* Model persistence using `.keras` format
-* Prediction notebook for testing custom reviews
+* Real-time prediction through Streamlit UI
 
 ---
 
 ## 🛠️ Technologies Used
 
 * **Python**
-* **NumPy**
-* **Pandas**
 * **TensorFlow / Keras**
 * **Natural Language Processing (NLP)**
+* **NumPy**
+* **Streamlit**
 * **Jupyter Notebook**
 
 ---
@@ -46,14 +51,14 @@ In this project:
 ```
 IMDB_MOVIE_REVIEW_SENTIMENTAL_ANALYSIS/
 │
-├── README.md                     # Project documentation
-├── requirements.txt              # Dependencies
+├── README.md
+├── requirements.txt
 │
-├── embedding.ipynb               # Text embedding & preprocessing
-├── prediction.ipynb              # Sentiment prediction notebook
-├── main.py                       # Model training script
+├── embedding.ipynb          # Text preprocessing & embeddings
+├── prediction.ipynb        # Sentiment prediction notebook
+├── main.py                 # Model training script
 │
-└── simple_rnn_imdb.keras         # Trained RNN model
+└── simple_rnn_imdb.keras   # Trained RNN model
 ```
 
 ---
@@ -72,7 +77,7 @@ Navigate to the project directory:
 cd IMDB_MOVIE_REVIEW_SENTIMENTAL_ANALYSIS
 ```
 
-Install required libraries:
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
@@ -80,30 +85,26 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ How to Run
+## ▶️ How to Run Locally
 
-### 1️⃣ Train the Model
+Train the model:
 
 ```bash
 python main.py
 ```
 
-### 2️⃣ Run Experiments & Predictions
+Run notebooks:
 
 ```bash
 jupyter notebook embedding.ipynb
 jupyter notebook prediction.ipynb
 ```
 
----
+Run Streamlit app:
 
-## 🧠 Model Details
-
-* **Model Type:** Simple Recurrent Neural Network (RNN)
-* **Embedding Layer:** Converts words to dense vectors
-* **Output Layer:** Sigmoid activation for binary classification
-* **Loss Function:** Binary Crossentropy
-* **Optimizer:** Adam
+```bash
+streamlit run main.py
+```
 
 ---
 
@@ -112,17 +113,16 @@ jupyter notebook prediction.ipynb
 * **Positive Review**
 * **Negative Review**
 
-The model predicts sentiment based on the textual review provided.
+The sentiment prediction is displayed instantly on the web interface.
 
 ---
 
 ## 🔮 Future Enhancements
 
-* Replace RNN with **LSTM / GRU** for better performance
-* Hyperparameter tuning
-* Use pre-trained embeddings (GloVe, Word2Vec)
-* Web app deployment (Streamlit)
-* Multi-class sentiment analysis
+* Upgrade RNN to LSTM / GRU
+* Use pre-trained word embeddings (GloVe, Word2Vec)
+* Improve UI/UX of Streamlit app
+* Multi-class sentiment classification
 
 ---
 
@@ -132,3 +132,10 @@ The model predicts sentiment based on the textual review provided.
 B.Tech Student | NLP & Deep Learning Enthusiast
 
 ---
+
+
+* Add **screenshots of the Streamlit app**
+* Add **model accuracy & loss plots**
+* Polish it further for **top-tier GitHub profile**
+
+Just say 👍
