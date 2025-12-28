@@ -68,7 +68,7 @@ IMDB_MOVIE_REVIEW_SENTIMENTAL_ANALYSIS/
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/IMDB_MOVIE_REVIEW_SENTIMENTAL_ANALYSIS.git
+https://github.com/JahnaviSingh2005/IMDB_MOVIE_REVIEW_SENTIMENTAL_ANALYSIS.git
 ```
 
 Navigate to the project directory:
